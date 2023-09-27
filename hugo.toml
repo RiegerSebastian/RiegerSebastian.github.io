@@ -1,0 +1,42 @@
+baseURL = 'https://rieger-online.at'
+languageCode = 'en-us'
+title = 'Sebastian Rieger'
+staticDir = ['static']
+
+[params]
+title = "Sebastian Rieger"
+author = "Sebastian Rieger"
+mainSections = []
+description = """
+Interested in anything Software/Gaming/Sports related
+"""
+profilePicture = "images/logo.png"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/riegersebastian/"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.google.com"
+
+[[main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/"
+
+[[main]]
+name = "Posts"
+identifier = "posts"
+weight = 200
+url = "/posts/"
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false
